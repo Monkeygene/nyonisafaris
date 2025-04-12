@@ -1,4 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /404.html
+Disallow: /offline.html
+Allow: /
 
 Sitemap: https://nyonisafaris.com/sitemap.xml
