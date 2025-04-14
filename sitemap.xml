@@ -13,19 +13,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>malawi-birding-tours.html</loc>
+    <loc>https://nyonisafaris.com/malawi-birding-tours.html</loc>
     <lastmod>2025-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>south-africa-birding-tours.html</loc>
+    <loc>https://nyonisafaris.com/south-africa-birding-tours.html</loc>
     <lastmod>2025-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>zambia-birding-tours.html</loc>
+    <loc>https://nyonisafaris.com/zambia-birding-tours.html</loc>
     <lastmod>2025-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -50,13 +50,19 @@
   </url>
    <url>
     <loc>https://nyonisafaris.com/birding-at-lake-malawi.html</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-04-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
      <url>
     <loc>https://nyonisafaris.com/birding-in-liwonde-national-park.html</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+   <url>
+    <loc>https://nyonisafaris.com/birding-in-dzalanyama-forest.html</loc>
+    <lastmod>2025-04-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
