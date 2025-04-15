@@ -158,12 +158,13 @@
   <section class="flex flex-col items-center">
     <!-- Responsive Video Container -->
     <div class="w-full max-w-[1420px] mx-auto">
-      <div class="w-full h-[220px] sm:h-[300px] md:h-[360px] lg:h-[440px] bg-black flex items-center justify-center">
-        <!-- Video element with object-cover to fill its container -->
-        <video class="w-full h-full object-cover" loop muted autoplay>
-          <source src="path-to-your-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="w-full overflow-hidden">
+        <img
+          id="headerImage"
+          src="assets/images/header-images/red-chested-cuckoo-in-dense-woodland.jpg"
+          alt="Birds on Africa Birding Tours posed in Header Photo for Index Page"
+          class="w-full h-[220px] sm:h-[300px] md:h-[360px] lg:h-[440px] object-cover"
+        >
       </div>
     </div>
     </section>

@@ -124,5 +124,41 @@ accordions.forEach((accordion) => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  // Array of image paths – add as many images as you like.
+  const images = [
+    "assets/images/header-images/red-chested-cuckoo-in-dense-woodland.jpg",
+    "assets/images/header-images/red-chested-cuckoo-perched-on-broken-tree.jpg",
+    "assets/images/header-images/red-chested-cuckoo-side-view.jpg",
+    "assets/images/header-images/red-chested-cuckoo-perched-perfectly.jpg",
+    // Add additional image paths here…
+  ];
+
+  // Initial index (starting image)
+  let currentIndex = 0;
+
+  // Get reference to the image element using its ID.
+  const headerImage = document.getElementById("headerImage");
+
+  // Function to update the image
+  function updateImage() {
+    // Select a random index from the images array
+    const randomIndex = Math.floor(Math.random() * images.length);
+    headerImage.src = images[randomIndex];
+  }
+  
+
+  // Set an interval to update the image every hour (3600000 milliseconds)
+  setInterval(updateImage, 3600000);
+
+  // Optionally, if you want the image to update on page load based on the current time,
+  // you can initialize the image using the current hour:
+  //
+  // const currentHour = new Date().getHours();
+  // currentIndex = currentHour % images.length;
+  // headerImage.src = images[currentIndex];
+});
+
+
 
 
