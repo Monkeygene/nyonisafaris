@@ -1,5 +1,3 @@
-console.log('scripts.js loaded');
-
 document.addEventListener('click', function(event) {
   const menu = document.getElementById('mobile-menu');
   const icon = document.getElementById('hamburger-icon');
@@ -123,7 +121,6 @@ accordions.forEach((accordion) => {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
   // Array of image paths – add as many images as you like.
   const images = [
@@ -134,9 +131,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add additional image paths here…
   ];
 
-  // Initial index (starting image)
-  let currentIndex = 0;
-
   // Get reference to the image element using its ID.
   const headerImage = document.getElementById("headerImage");
 
@@ -145,18 +139,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Select a random index from the images array
     const randomIndex = Math.floor(Math.random() * images.length);
     headerImage.src = images[randomIndex];
+    console.log("Image updated to:", images[randomIndex]);
   }
   
+  // Immediately update the image on page load (optional testing step)
+  updateImage();
 
   // Set an interval to update the image every hour (3600000 milliseconds)
   setInterval(updateImage, 3600000);
-
-  // Optionally, if you want the image to update on page load based on the current time,
-  // you can initialize the image using the current hour:
-  //
-  // const currentHour = new Date().getHours();
-  // currentIndex = currentHour % images.length;
-  // headerImage.src = images[currentIndex];
 });
 
 
