@@ -85,34 +85,37 @@
   </head>
 
 <body class="bg-white paragraph-font">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+    <header>
   <nav class="bg-white h-[50px] lg:h-[100px] flex items-center px-12 relative z-50">
     <a href="index.html" class="ml-0 lg:ml-24 text-xl lg:text-2xl font-semibold heading-font">Nyoni Safaris</a>
     
     <ul class="ml-auto hidden md:flex space-x-6 relative mr-0 lg:mr-24">
       <li class="group relative">
-        <a href="#" class="relative text-black hover:underline hover:decoration-orange-700 hover:decoration-2 hover:underline-offset-[5px]">Tours</a>
+        <a href="#" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Tours</a>
         <ul class="absolute left-0 mt-0 w-40 bg-white shadow-md rounded-md overflow-hidden hidden group-hover:block z-50"
             onmouseover="this.classList.remove('hidden')"
             onmouseleave="this.classList.add('hidden')">
           <li>
-            <a href="malawi-birding-tours.html" class="block px-4 py-2 hover:bg-orange-50">Malawi</a>
+            <a href="malawi-birding-tours.html" class="block px-4 py-2 hover:bg-red-50">Malawi</a>
           </li>
           <li>
-            <a href="south-africa-birding-tours.html" class="block px-4 py-2 hover:bg-orange-50">South Africa</a>
+            <a href="south-africa-birding-tours.html" class="block px-4 py-2 hover:bg-red-50">South Africa</a>
           </li>
           <li>
-            <a href="zambia-birding-tours.html" class="block px-4 py-2 hover:bg-orange-50">Zambia</a>
+            <a href="zambia-birding-tours.html" class="block px-4 py-2 hover:bg-red-50">Zambia</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="about.html" class="relative text-black hover:underline hover:decoration-orange-700 hover:decoration-2 hover:underline-offset-[5px]">About</a>
+        <a href="about.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">About</a>
       </li>
       <li>
-        <a href="contact.html" class="relative text-black hover:underline hover:decoration-orange-700 hover:decoration-2 hover:underline-offset-[5px]">Contact</a>
+        <a href="contact.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Contact</a>
       </li>
       <li>
-        <a href="blog.html" class="relative text-black underline underline-offset-[5px] decoration-2 decoration-orange-700">Blog</a>
+        <a href="blog.html" class="relative text-black underline underline-offset-[5px] decoration-2 decoration-red-700">Blog</a>
       </li>
     </ul>
     
@@ -128,20 +131,21 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed top-0 right-0 w-1/2 h-full bg-white shadow-lg flex flex-col p-6 space-y-4 transform transition-transform duration-200 ease-in-out translate-x-full">
       <button class="self-end text-xl" onclick="toggleMenu()">&times;</button>
-      <a href="#" class="relative text-black hover:underline hover:decoration-orange-700 hover:decoration-2 hover:underline-offset-[5px]">Tours</a>
+      <a href="#" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Tours</a>
       <div class="ml-4 space-y-2">
-        <a href="malawi-birding-tours.html" class="block hover:text-orange-700">Malawi</a>
-        <a href="south-africa-birding-tours.html" class="block hover:text-orange-700">South Africa</a>
-        <a href="zambia-birding-tours.html" class="block hover:text-orange-700">Zambia</a>
+        <a href="malawi-birding-tours.html" class="block hover:text-red-700">Malawi</a>
+        <a href="south-africa-birding-tours.html" class="block hover:text-red-700">South Africa</a>
+        <a href="zambia-birding-tours.html" class="block hover:text-red-700">Zambia</a>
       </div>
-      <a href="about.html" class="relative text-black hover:underline hover:decoration-orange-700 hover:decoration-2 hover:underline-offset-[5px]">About</a>
-      <a href="contact.html" class="relative text-black hover:underline hover:decoration-orange-700 hover:decoration-2 hover:underline-offset-[5px]">Contact</a>
-      <a href="blog.html" class="relative text-black underline underline-offset-[5px] decoration-2 decoration-orange-700">Blog</a>
+      <a href="about.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">About</a>
+      <a href="contact.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Contact</a>
+      <a href="blog.html" class="relative text-black underline underline-offset-[5px] decoration-2 decoration-red-700">Blog</a>
     </div>
   </nav>
+  </header>
 <!-- End of Nav -->
 
- <!-- Responsive Hero Text Section -->
+ <!-- Section: Main Content -->
 <section class="py-4 lg:py-12">
   <div class="container mx-auto px-4 flex flex-col items-center justify-center py-8">
     <div class="max-w-4xl text-center">
@@ -162,8 +166,8 @@
 <section class="py-4 lg:py-12">
   <div class="flex justify-center items-center w-full px-4 py-4">
     <div class="w-full max-w-[980px]">
-      <img src="assets/images/malawi/lake-malawi/kachere/lake-malawi-beach-kachere-kastle.jpg" alt="Description of the image" class="w-full h-auto lg:h-[500px] object-cover">
-      <p class="mt-1 text-xs text-left">Stretching Miombo woodlands of Dzalanyama Forest Reserve </p>
+      <img src="assets/images/malawi/lake-malawi/lake-malawi-beach-kachere-kastle.jpg" alt="a quiet beach walk on Kachere beach, with Lake Malawi to the left and Kachere on the right, plentiful birding opportunities here" class="w-full h-auto lg:h-[500px] object-cover">
+      <p class="mt-1 text-xs text-left">Quiet beach walk on the shores of Kachere, Lake Malawi</p>
     </div>
   </div>
 </section>
@@ -188,8 +192,8 @@
 <section class="py-4 lg:py-12">
   <div class="flex justify-center items-center w-full px-4 py-4">
     <div class="w-full max-w-[980px]">
-      <img src="assets/images/south-africa/kruger-national-park/groundhornbill.jpg" alt="Description of the image" class="w-full h-auto lg:h-[500px] object-cover">
-      <p class="mt-1 text-xs text-left">Rolling grassland on the majestic Nyika Plateau</p>
+      <img src="assets/images/malawi/lake-malawi/makuzi-beach-lodge-purple-crested-turaco.jpg" alt="birding in Malawi, at Lake Malawi you can encounter this beautiful Purple-Crested Turaco" class="w-full h-auto lg:h-[500px] object-cover">
+      <p class="mt-1 text-xs text-left">Purple-Crested Turaco overlooking the lake at Mkuzi Beach Lodge.</p>
     </div>
   </div>
 </section>
@@ -225,8 +229,8 @@
 <section class="py-4 lg:py-12">
   <div class="flex justify-center items-center w-full px-4 py-4">
     <div class="w-full max-w-[980px]">
-      <img src="assets/images/south-africa/kruger-national-park/groundhornbill.jpg" alt="Description of the image" class="w-full h-auto lg:h-[500px] object-cover">
-      <p class="mt-1 text-xs text-left">Rolling grassland on the majestic Nyika Plateau</p>
+      <img src="assets/images/malawi/lake-malawi/butterfly-inn-nkhata-bay-lake-malawi.jpg" alt="View of Lake Malawi from the Butterfly Inn in Nkatabay" class="w-full h-auto lg:h-[500px] object-cover">
+      <p class="mt-1 text-xs text-left">Butterfly inn in Nkhata Bay, Lake Malawi</p>
     </div>
   </div>
 </section>
@@ -285,8 +289,8 @@
 <section class="py-4 lg:py-12">
   <div class="flex justify-center items-center w-full px-4 py-4">
     <div class="w-full max-w-[980px]">
-      <img src="assets/images/malawi/nyika-national-park/hyena-nyika-national-park.jpg" alt="Description of the image" class="w-full h-auto lg:h-[500px] object-cover">
-      <p class="mt-1 text-xs text-left">Hyena on a kill in Nyika National Park</p>
+      <img src="assets/images/malawi/lake-malawi/sunga-moyo-beach.jpg" alt="Sunga Moyo beach at Lake Malawi has some nice rock formations on the beach" class="w-full h-auto lg:h-[500px] object-cover">
+      <p class="mt-1 text-xs text-left">Sunga Moyo Beach</p>
     </div>
   </div>
 </section>
@@ -315,8 +319,8 @@ Lake Malawi stands out globally for its impressive fish diversity, home to up to
 <section class="py-4 lg:py-12">
   <div class="flex justify-center items-center w-full px-4 py-4">
     <div class="w-full max-w-[980px]">
-      <img src="assets/images/malawi/nyika-national-park/leopard-in-tree-nyika-national-park.jpg" alt="Description of the image" class="w-full h-auto lg:h-[500px] object-cover">
-      <p class="mt-1 text-xs text-left">a Leopard with a kill in small tree in Nyika National Park</p>
+      <img src="assets/images/malawi/lake-malawi/malawi-makoro-on-lake-malawi-beach.jpg" alt="the bwatu is the name of the dug-out canoe which you commonly see at Lake Malawi class="w-full h-auto lg:h-[500px] object-cover">
+      <p class="mt-1 text-xs text-left">a "bwatu" on the shores of Lake Malawi</p>
     </div>
   </div>
 </section>
@@ -345,50 +349,50 @@ Lake Malawi stands out globally for its impressive fish diversity, home to up to
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-2 justify-items-center">
       <!-- First Image Box -->
       <div class="w-full lg:max-w-[400px]">
-        <a href="assets/images/malawi/nyika-national-park/birding-nyika-national-park.jpg" class="open-modal">
+        <a href="assets/images/malawi/lake-malawi/makuzi-beach-lodge-purple-crested-turaco.jpg" class="open-modal">
           <div class="relative w-full overflow-hidden aspect-[3/4]">
-            <img src="assets/images/malawi/nyika-national-park/birding-nyika-national-park.jpg" 
-                 alt="Walking to a Montane Forest patch in Nyika Plateau National Park" 
+            <img src="assets/images/malawi/lake-malawi/makuzi-beach-lodge-purple-crested-turaco.jpg" 
+                 alt="a Purple-Crested Turaco at Mkuzi Beach Lodge, Lake Malawi" 
                  class="absolute inset-0 w-full h-full object-cover">
           </div>
         </a>
-        <p class="mt-1 text-xs text-center">Searching for birds in Nyika Plateau National Park</p>
+        <p class="mt-1 text-xs text-center">Oftern creating a relaxing atmosphere with their call, the Purple-Crested Turaco is a delight.</p>
       </div>
       
       <!-- Second Image Box -->
       <div class="w-full lg:max-w-[400px]">
-        <a href="assets/images/malawi/nyika-national-park/dusky-turtle-dove-nyika-national-park.jpg" class="open-modal">
+        <a href="assets/images/malawi/lake-malawi/rocky-shores-at-lake-malawi.jpg" class="open-modal">
           <div class="relative w-full overflow-hidden aspect-[3/4]">
-            <img src="assets/images/malawi/nyika-national-park/dusky-turtle-dove-nyika-national-park.jpg" 
-                 alt="Dusky Turtle Dove in Nyika National Park" 
+            <img src="assets/images/malawi/lake-malawi/rocky-shores-at-lake-malawi.jpg" 
+                 alt="More rock formations on the beach at Sunga Moyo, Lake Malawi" 
                  class="absolute inset-0 w-full h-full object-cover">
           </div>
         </a>
-        <p class="mt-1 text-xs text-center">A Dusky Turtle Dove perched and gave us a good view.</p>
+        <p class="mt-1 text-xs text-center">Although most of Lake Malawi is flat, there are some rocky bits.</p>
       </div>
       
       <!-- Third Image Box -->
       <div class="w-full lg:max-w-[400px]">
-        <a href="assets/images/malawi/nyika-national-park/flower-nyika-national-park.jpg" class="open-modal">
+        <a href="assets/images/malawi/lake-malawi/makuzi-beach-lodge-blue-spotted-wood-dove.jpg" class="open-modal">
           <div class="relative w-full overflow-hidden aspect-[3/4]">
-            <img src="assets/images/malawi/nyika-national-park/flower-nyika-national-park.jpg" 
-                 alt="Flower in Nyika National Park" 
+            <img src="assets/images/malawi/lake-malawi/makuzi-beach-lodge-blue-spotted-wood-dove.jpg" 
+                 alt="this Blue-Spotted Wood-Dove you can find when Birding in Malawi at Lake Malawi" 
                  class="absolute inset-0 w-full h-full object-cover">
           </div>
         </a>
-        <p class="mt-1 text-xs text-center">Nyika is also a botanist's dream!</p>
+        <p class="mt-1 text-xs text-center">a common sight on the grass, the Blue-Spotted Wood-Dove</p>
       </div>
       
       <!-- Fourth Image Box -->
       <div class="w-full lg:max-w-[400px]">
-        <a href="assets/images/malawi/nyika-national-park/rolling-hills-nyika-national-park.jpg" class="open-modal">
+        <a href="assets/images/malawi/lake-malawi/boat-on-lake-malawi.jpg" class="open-modal">
           <div class="relative w-full overflow-hidden aspect-[3/4]">
-            <img src="assets/images/malawi/nyika-national-park/rolling-hills-nyika-national-park.jpg" 
-                 alt="Rolling Hills in Nyika National Park" 
+            <img src="assets/images/malawi/lake-malawi/boat-on-lake-malawi.jpg" 
+                 alt="Fishermen coming back from their fishing trip on Lake Malawi" 
                  class="absolute inset-0 w-full h-full object-cover">
           </div>
         </a>
-        <p class="mt-1 text-xs text-center">Some of the greatest views you will ever see.</p>
+        <p class="mt-1 text-xs text-center">Fishermen coming back after a long day fishing on Lake Malawi</p>
       </div>
     </div>
   </div>
