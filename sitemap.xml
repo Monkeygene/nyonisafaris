@@ -126,6 +126,18 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+    <url>
+    <loc>https://nyonisafaris.com/kafue-national-park-birding.html</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <url>
+    <loc>https://nyonisafaris.com/south-luangwa-national-park-birding.html</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://nyonisafaris.com/beginner-bird-photography.html</loc>
     <lastmod>2025-04-19</lastmod>
