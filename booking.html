@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Prevent indexing -->
+  <meta name="robots" content="noindex,nofollow" />
+
+  <title>Booking - Nyoni Safaris</title>
+  <!-- Tailwind CSS (via CDN for demo—swap for your build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal text-gray-800">
+
+  <main class="max-w-3xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6">Book Your Tour</h1>
+
+    <form
+      action="/api/bookings"
+      method="POST"
+      class="bg-white p-6 rounded-lg shadow space-y-6"
+    >
+      <!-- Hidden selected tour ID -->
+      <input type="hidden" name="selected_tour" value="3576" />
+
+      <!-- Honeypot to trap bots -->
+      <div class="hidden">
+        <label>Leave this field blank:
+          <input type="text" name="website" autocomplete="off" />
+        </label>
+      </div>
+
+      <!-- Name & Contact -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block font-medium mb-1" for="full_name">Full Name</label>
+          <input
+            id="full_name"
+            name="full_name"
+            type="text"
+            required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label class="block font-medium mb-1" for="email">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+      </div>
+
+      <!-- Dates & Travelers -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <label class="block font-medium mb-1" for="start_date">Start Date</label>
+          <input
+            id="start_date"
+            name="start_date"
+            type="date"
+            required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label class="block font-medium mb-1" for="end_date">End Date</label>
+          <input
+            id="end_date"
+            name="end_date"
+            type="date"
+            required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label class="block font-medium mb-1" for="guests"># of Travelers</label>
+          <input
+            id="guests"
+            name="guests"
+            type="number"
+            min="1"
+            value="1"
+            required
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+      </div>
+
+      <!-- Special Requests -->
+      <div>
+        <label class="block font-medium mb-1" for="requests">Special Requests / Notes</label>
+        <textarea
+          id="requests"
+          name="special_requests"
+          rows="4"
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Dietary restrictions, mobility needs, etc."
+        ></textarea>
+      </div>
+
+      <!-- Payment Options (optional) -->
+      <div>
+        <p class="font-medium mb-2">Payment Method</p>
+        <div class="space-x-4">
+          <label class="inline-flex items-center">
+            <input type="radio" name="payment_method" value="deposit" checked class="form-radio" />
+            <span class="ml-2">Deposit Now</span>
+          </label>
+          <label class="inline-flex items-center">
+            <input type="radio" name="payment_method" value="balance" class="form-radio" />
+            <span class="ml-2">Pay Full Balance</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Terms & Submit -->
+      <div class="flex items-center space-x-3">
+        <input
+          id="agree"
+          name="agree"
+          type="checkbox"
+          required
+          class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+        />
+        <label for="agree" class="text-sm">
+          I agree to the <a href="terms-conditions.html" class="text-blue-600 hover:underline">terms & conditions</a>.
+        </label>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition"
+      >
+        Submit Booking
+      </button>
+    </form>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
