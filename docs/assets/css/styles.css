@@ -10,13 +10,13 @@ body {
 
 @font-face {
   font-family: 'Forum';
-  src: url('/docs/assets/font/Forum-Regular.ttf') format('truetype');
+  src: url('/src/fonts/Forum-Regular.ttf') format('truetype');
 }
 
 
 @font-face {
   font-family: 'Avenir';
-  src: url('/docs/assets/font/avenir-light.ttf') format('truetype');
+  src: url('/src/fonts/avenir-light.ttf') format('truetype');
 }
 
 .heading-font {

@@ -1,7 +1,12 @@
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
+  content: ["./docs/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        avenir: ['AvenirLight', 'sans-serif'],
+        forum: ['Forum', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
