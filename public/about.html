@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Encoding & Viewport -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title: Updated to reflect the About Page -->
+  <title>About - Nyoni Safaris</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Learn more about Nyoni Safaris – your expert guide to Africa's top birding destinations. Discover our passion for wildlife and exceptional birding tours.">
+  <meta name="keywords" content="African birding tours, Nyoni Safaris, about Nyoni Safaris, bird watching, Africa, birding adventures">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Nyoni Safaris">
+  <!-- Canonical set to the about page -->
+  <link rel="canonical" href="https://nyonisafaris.com/about.html">
+
+  <!-- Theme Color for Mobile Browsers -->
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="About - Nyoni Safaris">
+  <meta property="og:description" content="Learn more about Nyoni Safaris – your expert guide to Africa's top birding destinations and unforgettable birding tours.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:url" content="https://nyonisafaris.com/about.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About - Nyoni Safaris">
+  <meta name="twitter:description" content="Learn more about Nyoni Safaris – your guide to Africa's premier birding destinations and tours.">
+  <meta name="twitter:image" content="assets/og-image.jpg">
+
+  <!-- Favicon and Touch Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/nyonibirdingsafarislogowhite.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- TAILWIND CSS -->
+  <link rel="stylesheet" href="/assets/css/build/tailwind.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="/public/assets/css/styles.css">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Nyoni Safaris",
+      "url": "https://nyonisafaris.com/about.html",
+      "logo": "https://nyonisafaris.com/assets/images/nyonisafaris-favicon.webp",
+      "image": "https://nyonisafaris.com/assets/og-image.jpg",
+      "description": "Learn more about Nyoni Safaris – your expert guide to Africa's top birding destinations and exceptional birding tours.",
+      "telephone": "+1234567890",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Your Street Address",
+        "addressLocality": "Your City",
+        "addressRegion": "Your State/Region",
+        "postalCode": "Your Postal Code",
+        "addressCountry": "Your Country"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/nyonisafaris",
+        "https://twitter.com/nyonisafaris",
+        "https://www.instagram.com/nyonisafaris"
+      ],
+      "priceRange": "$$"
+    }
+  </script>
+
+  <!-- Google Tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPB3XG9XTD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WPB3XG9XTD');
+  </script>
+</head>
+
+
+<body class="bg-white paragraph-font">
+  <nav class="bg-white h-[50px] lg:h-[100px] flex items-center px-12 relative z-50">
+    <a href="index.html" class="ml-0 lg:ml-24 text-xl lg:text-2xl font-semibold heading-font">Nyoni Safaris</a>
+    
+    <ul class="ml-auto hidden md:flex space-x-6 relative mr-0 lg:mr-24">
+      <li class="group relative">
+        <a href="#" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Tours</a>
+        <ul class="absolute left-0 mt-0 w-40 bg-white shadow-md rounded-md overflow-hidden hidden group-hover:block z-50"
+            onmouseover="this.classList.remove('hidden')"
+            onmouseleave="this.classList.add('hidden')">
+          <li>
+            <a href="birding-tours-malawi.html" class="block px-4 py-2 hover:bg-red-50">Malawi</a>
+          </li>
+          <li>
+            <a href="birding-tours-south-africa.html" class="block px-4 py-2 hover:bg-red-50">South Africa</a>
+          </li>
+          <li>
+            <a href="birding-tours-zambia.html" class="block px-4 py-2 hover:bg-red-50">Zambia</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="about.html" class="elative text-black underline underline-offset-[5px] decoration-2 decoration-red-700">About</a>
+      </li>
+      <li>
+        <a href="contact.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Contact</a>
+      </li>
+      <li>
+        <a href="blog.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Blog</a>
+      </li>
+    </ul>
+    
+    <!-- Mobile Menu Button -->
+    <button id="hamburger-icon" aria-controls="mobile-menu" aria-expanded="false"
+            class="md:hidden flex flex-col space-y-1 p-2 rounded-md absolute right-12"
+            onclick="toggleMenu()">
+      <span class="block w-6 h-1 bg-black rounded-md"></span>
+      <span class="block w-6 h-1 bg-black rounded-md"></span>
+      <span class="block w-6 h-1 bg-black rounded-md"></span>
+    </button>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 w-1/2 h-full bg-white shadow-lg flex flex-col p-6 space-y-4 transform transition-transform duration-200 ease-in-out translate-x-full">
+      <button class="self-end text-xl" onclick="toggleMenu()">&times;</button>
+      <a href="#" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Tours</a>
+      <div class="ml-4 space-y-2">
+        <a href="birding-tours-malawi.html" class="block hover:text-red-700">Malawi</a>
+        <a href="birding-tours-south-africa.html" class="block hover:text-red-700">South Africa</a>
+        <a href="birding-tours-zambia.html" class="block hover:text-red-700">Zambia</a>
+      </div>
+      <a href="about.html" class="elative text-black underline underline-offset-[5px] decoration-2 decoration-red-700">About</a>
+      <a href="contact.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Contact</a>
+      <a href="blog.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Blog</a>
+    </div>
+  </nav>
+
+   <!-- Image Box -->
+   <section class="max-w-[1420px] mx-auto px-4">
+    <div class="w-full overflow-hidden">
+      <img src="assets/images/zambia/south-luangwa-national-park/leadwoodforestluangwa.jpg" alt="Contact Header Image" class="w-full h-[220px] sm:h-[300px] md:h-[360px] lg:h-[440px] object-cover">
+    </div>
+    </section>
+
+    <!-- Responsive Hero Text Section -->
+<section class="py-4 lg:py-24">
+  <div class="container mx-auto px-4 flex flex-col items-center justify-center py-8">
+    <div class="max-w-4xl text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+        Nyoni Safaris
+      </h1>
+      <p class="text-md sm:text-base md:text-lg lg:text-lg text-gray-700">
+        Thinking of going on an African birding journey, guided by a passionate birding expert who knows the birds of Africa. Nyoni Safaris specialises in tailor-made Africa birding tours, featuring exceptional birding safaris from Southern and East Africa. Let me create the perfect tailor-made birding tour for you, personalised to match your pace and interests.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Eugene Booysen -->
+  <section class="mt-8 py-4 lg:py-12">
+    <div class="container mx-auto max-w-[1420px] px-4 flex flex-col flex-col-reverse md:flex-row items-center justify-center">
+      <!-- Image on left on medium+ screens -->
+      <div class="md:w-1/2 p-4">
+        <img src="assets/images/random/eugene-booysen-cederberg.jpg" alt="Eugene Booysen" class="w-full h-auto max-h-[600px] object-contain">
+
+      </div>
+      <!-- Text content on right on medium+ screens -->
+      <div class="md:w-1/2 p-4">
+        <div class="max-w-4xl lg:max-w-5xl">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold py-4 text-center md:text-left">
+            Eugene Booysen
+          </h2>
+          <p class="text-gray-700 sm:text-base md:text-lg lg:text-lg mt-2 paragraph-font text-center md:text-left">
+            Hi, I'm Eugene Booysen, a birding enthusiast and passionate safari guide. Over the years, I've honed my guiding expertise, often finding myself in various unique locations across Africa. Growing up near South Africa's famous Kruger National Park, I've always felt a deep connection to the natural world. I embody expertise and professionalism in the field, understanding the importance of adhering to birding ethics. My time hasn't only been spent getting to know the natural kingdom; I'm also a videographer and photographer. So, rest assured, you'll be in great hands with me—a true specialist in uncovering the wonders of African birding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+<footer class="bg-white text-gray-800 py-12 text-center">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Column 1: Menu -->
+        <div>
+          <h3 class="text-lg md:text-xl font-bold mb-4">Menu</h3>
+          <ul>
+            <li class="mb-2">
+              <a href="index.html" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="tours.html" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">Tours</a>
+            </li>
+            <li class="mb-2">
+              <a href="about.html" class="text-sm md:text-base border-b-2 border-red-700 hover:border-red-700 transition duration-300">About</a>
+            </li>
+            <li class="mb-2">
+              <a href="contact.html" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">Contact</a>
+            </li>
+            <li class="mb-2">
+              <a href="blog.html" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Column 2: Countries -->
+        <div>
+          <h3 class="text-lg md:text-xl font-bold mb-4">Destinations</h3>
+          <ul>
+            <li class="mb-2">
+              <a href="birding-tours-malawi.html" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">Malawi</a>
+            </li>
+            <li class="mb-2">
+              <a href="birding-tours-south-africa.html" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">South Africa</a>
+            </li>
+            <li class="mb-2">
+              <a href="birding-tours-zambia.html" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">Zambia</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Column 3: Contact & Socials -->
+        <div>
+          <h3 class="text-lg md:text-xl font-bold mb-4">Contact & Socials</h3>
+          <ul>
+            <li class="mb-2">
+              <a href="mailto:eugene@nyonisafaris.com" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">eugene@nyonisafaris.com</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://facebook.com" target="_blank" rel="noopener" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">Facebook</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">Instagram</a>
+            </li>
+            <li class="mb-2">
+              <a href="https://twitter.com" target="_blank" rel="noopener" class="text-sm md:text-base border-b-2 border-transparent hover:border-red-700 transition duration-300">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Column 4: Logo -->
+        <div class="flex items-center justify-center">
+          <img src="assets/images/logo/nyonisafaris-text.png" alt="Nyoni Safaris Logo" class="w-32">
+        </div>
+      </div>
+      <div class="mt-8 text-center text-xs md:text-sm text-gray-500">
+        &copy; 2025 Nyoni Safaris. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

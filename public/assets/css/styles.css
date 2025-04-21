@@ -1,0 +1,66 @@
+::selection {
+  background-color: #F4EBD0;
+  color: black;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Forum';
+  src: url('/public/assets/font/Forum-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/public/assets/font/avenir-light.ttf') format('truetype');
+}
+
+.heading-font {
+  font-family: 'Forum', serif;
+}
+
+.paragraph-font {
+  font-family: 'Avenir', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Forum', serif;
+}
+
+p {
+  font-family: 'Avenir', sans-serif;
+}
+
+.portrait-img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    object-position: center;
+}
+
+
+.square-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.half-page-img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  object-position: center;
+}
+
+.underline-custom {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  text-decoration-color: #fa1515;
+}
+
