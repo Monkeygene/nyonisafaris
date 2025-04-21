@@ -5,9 +5,9 @@
   "type": "commonjs",
   "scripts": {
     "start": "live-server ./public ",
-    "build": "tailwindcss -i ./src/input.css -o ./public/style.css --minify",
-    "tailwind": "tailwindcss  -i css/main.css -o public/assets/css/build/tailwind.css --minify  & live-server ./public ",
-    "dev": "tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+    "build": "tailwindcss -i ./src/input.css -o ./docs/style.css --minify",
+    "tailwind": "tailwindcss  -i css/main.css -o docs/assets/css/build/tailwind.css --minify  & live-server ./public ",
+    "dev": "tailwindcss -i ./src/input.css -o ./docs/style.css --watch"
   },
   "keywords": [
     "HTML template",
