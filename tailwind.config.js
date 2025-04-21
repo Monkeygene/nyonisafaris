@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        avenir: ['AvenirLight', 'sans-serif'],
-        forum: ['Forum', 'serif'],
+        sans: ['AvenirLight', 'sans-serif'],
+        heading: ['Forum', 'serif'],
       },
     },
   },

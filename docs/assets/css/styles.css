@@ -8,33 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: 'Forum';
-  src: url('/src/fonts/Forum-Regular.ttf') format('truetype');
-}
-
-
-@font-face {
-  font-family: 'Avenir';
-  src: url('/src/fonts/avenir-light.ttf') format('truetype');
-}
-
-.heading-font {
-  font-family: 'Forum', serif;
-}
-
-.paragraph-font {
-  font-family: 'Avenir', sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: 'Forum', serif;
-}
-
-p {
-  font-family: 'Avenir', sans-serif;
-}
-
 .portrait-img {
     object-fit: cover;
     width: 100%;
