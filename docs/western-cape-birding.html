@@ -81,62 +81,73 @@
     </script>
   </head>
 
-<body class="bg-white font-sans">
-  <nav class="bg-white h-[50px] lg:h-[100px] flex items-center px-12 relative z-50">
-    <a href="index.html" class="ml-0 lg:ml-24 text-xl lg:text-2xl font-semibold heading-font">Nyoni Safaris</a>
-    
-    <ul class="ml-auto hidden md:flex space-x-6 relative mr-0 lg:mr-24">
-      <li class="group relative">
-        <a href="#" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Tours</a>
-        <ul class="absolute left-0 mt-0 w-40 bg-white shadow-md rounded-md overflow-hidden hidden group-hover:block z-50"
-            onmouseover="this.classList.remove('hidden')"
-            onmouseleave="this.classList.add('hidden')">
-          <li>
-            <a href="birding-tours-malawi.html" class="block px-4 py-2 hover:bg-red-50">Malawi</a>
+  <body class="font-sans text-black bg-white">
+    <nav class="bg-white w-full flex relative z-50">
+      <div class="max-w-7xl container mx-auto px-6 lg:px-12 flex items-center justify-between h-16 lg:h-20">
+            <!-- Brand -->
+      <a href="index.html" class="flex-shrink-0">
+        <img
+          src="assets/images/logo/Nyoni-Safaris-title-website.svg"
+          alt="Nyoni Safaris logo"
+          class="h-[20px] lg:h-[30px]"
+        />
+      </a>
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8">
+          <li class="relative group">
+            <button aria-haspopup="true" aria-expanded="false" class="flex items-center text-gray-800 hover:text-gray-600 transition focus:outline-none">
+              Tours
+            </button>
+            <ul class="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transform scale-95 group-hover:scale-100 transition-all origin-top z-50">
+              <li><a href="birding-tours-malawi.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-t-md">Malawi</a></li>
+              <li><a href="birding-tours-south-africa.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">South Africa</a></li>
+              <li><a href="birding-tours-zambia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-b-md">Zambia</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="birding-tours-south-africa.html" class="block px-4 py-2 hover:bg-red-50">South Africa</a>
-          </li>
-          <li>
-            <a href="birding-tours-zambia.html" class="block px-4 py-2 hover:bg-red-50">Zambia</a>
-          </li>
+          <li><a href="about.html" class="text-gray-800 hover:text-gray-600 transition">About</a></li>
+          <li><a href="contact.html" class="text-gray-800 hover:text-gray-600 transition">Contact</a></li>
+          <li><a href="blog.html" class="text-gray-800 hover:text-gray-600 transition">Blog</a></li>
         </ul>
-      </li>
-      <li>
-        <a href="about.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">About</a>
-      </li>
-      <li>
-        <a href="contact.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Contact</a>
-      </li>
-      <li>
-        <a href="blog.html" class="relative text-black underline underline-offset-[5px] decoration-2 decoration-red-700">Blog</a>
-      </li>
-    </ul>
-    
-    <!-- Mobile Menu Button -->
-    <button id="hamburger-icon" aria-controls="mobile-menu" aria-expanded="false"
-            class="md:hidden flex flex-col space-y-1 p-2 rounded-md absolute right-12"
-            onclick="toggleMenu()">
-      <span class="block w-6 h-1 bg-black rounded-md"></span>
-      <span class="block w-6 h-1 bg-black rounded-md"></span>
-      <span class="block w-6 h-1 bg-black rounded-md"></span>
-    </button>
-  
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed top-0 right-0 w-1/2 h-full bg-white shadow-lg flex flex-col p-6 space-y-4 transform transition-transform duration-200 ease-in-out translate-x-full">
-      <button class="self-end text-xl" onclick="toggleMenu()">&times;</button>
-      <a href="#" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Tours</a>
-      <div class="ml-4 space-y-2">
-        <a href="birding-tours-malawi.html" class="block hover:text-red-700">Malawi</a>
-        <a href="birding-tours-south-africa.html" class="block hover:text-red-700">South Africa</a>
-        <a href="birding-tours-zambia.html" class="block hover:text-red-700">Zambia</a>
+        <!-- Mobile menu button -->
+        <button id="nav-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle mobile menu" class="md:hidden focus:outline-none">
+          <svg id="icon-open" class="h-6 w-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="icon-close" class="h-6 w-6 text-gray-800 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
-      <a href="about.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">About</a>
-      <a href="contact.html" class="relative text-black hover:underline hover:decoration-red-700 hover:decoration-2 hover:underline-offset-[5px]">Contact</a>
-      <a href="blog.html" class="relative text-black underline underline-offset-[5px] decoration-2 decoration-red-700">Blog</a>
-    </div>
-  </nav>
-<!-- End of Nav -->
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="fixed inset-y-0 right-0 w-2/3 bg-white shadow-lg transform translate-x-full transition-transform duration-300 md:hidden">
+        <div class="flex justify-end p-6">
+          <button id="mobile-close" aria-label="Close mobile menu" class="focus:outline-none">
+            <svg class="h-6 w-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <nav class="px-6 space-y-4">
+          <div class="space-y-2">
+            <button class="w-full flex justify-between items-center text-gray-800 hover:text-gray-600 transition focus:outline-none" aria-haspopup="true" aria-expanded="false" id="mobile-tours-btn">
+              Tours
+              <svg class="h-4 w-4 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="mobile-tours" class="ml-4 hidden space-y-2">
+              <a href="birding-tours-malawi.html" class="block text-gray-700 hover:text-gray-900 transition">Malawi</a>
+              <a href="birding-tours-south-africa.html" class="block text-gray-700 hover:text-gray-900 transition">South Africa</a>
+              <a href="birding-tours-zambia.html" class="block text-gray-700 hover:text-gray-900 transition">Zambia</a>
+            </div>
+          </div>
+          <a href="about.html" class="block text-gray-800 hover:text-gray-600 transition">About</a>
+          <a href="contact.html" class="block text-gray-800 hover:text-gray-600 transition">Contact</a>
+          <a href="blog.html" class="block text-gray-800 hover:text-gray-600 transition">Blog</a>
+        </nav>
+      </div>
+      </nav>
+      <!-- End of Nav -->
 
  <!-- Responsive Hero Text Section -->
 <section class="py-4 lg:py-12">
