@@ -5,7 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "live-server ./docs ",
-    "build": "tailwindcss -i ./src/input.css -o /docs/style.css --minify",
+    "build": "tailwindcss -i ./src/input.css -o ./docs/style.css --minify",
     "tailwind": "tailwindcss  -i css/main.css -o docs/assets/css/build/tailwind.css --minify  & live-server ./docs ",
     "dev": "tailwindcss -i ./src/input.css -o ./docs/style.css --watch"
   },
