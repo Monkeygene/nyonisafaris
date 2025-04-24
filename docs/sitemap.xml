@@ -74,7 +74,25 @@
   </url>
   <url>
     <loc>https://nyonisafaris.com/blog.html</loc>
-    <lastmod>2025-04-19</lastmod>
+    <lastmod>2025-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nyonisafaris.com/malawi-blog.html</loc>
+    <lastmod>2025-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nyonisafaris.com/south-africa-blog.html</loc>
+    <lastmod>2025-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nyonisafaris.com/zambia-blog.html</loc>
+    <lastmod>2025-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
