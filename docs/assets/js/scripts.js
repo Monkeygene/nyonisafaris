@@ -35,28 +35,26 @@ toursBtn.addEventListener('click', () => {
 
 // JavaScript to filter blog cards based on the selected pill
 const pills = document.querySelectorAll('.pill');
-const blogCards = document.querySelectorAll('.blog-card');
+const cards = document.querySelectorAll('.blog-card');
 
 pills.forEach(pill => {
   pill.addEventListener('click', () => {
-    // Remove active styling from all pills
+    const filter = pill.dataset.filter;
+
+    // toggle active pill styling
     pills.forEach(p => {
-      p.classList.remove('bg-red-700', 'text-white');
-      p.classList.add('bg-gray-200', 'text-gray-800');
+      p.classList.toggle('bg-red-700', p === pill);
+      p.classList.toggle('text-white', p === pill);
+      p.classList.toggle('bg-gray-200', p !== pill);
+      p.classList.toggle('text-gray-800', p !== pill);
     });
-    // Apply active styling to the clicked pill
-    pill.classList.remove('bg-gray-200', 'text-gray-800');
-    pill.classList.add('bg-red-700', 'text-white');
 
-    // Get the filter category from the clicked pill
-    const filter = pill.getAttribute('data-filter');
-
-    // Show/hide blog cards based on the filter
-    blogCards.forEach(card => {
-      if (filter === 'all' || card.getAttribute('data-category') === filter) {
-        card.style.display = 'block';
+    // show/hide cards
+    cards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.classList.remove('hidden');
       } else {
-        card.style.display = 'none';
+        card.classList.add('hidden');
       }
     });
   });
