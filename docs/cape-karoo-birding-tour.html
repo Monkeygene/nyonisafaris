@@ -170,7 +170,7 @@
     </section>
 
    <!-- Itinerary Introduction -->
-<section class="max-w-[1150px] mx-auto px-4 py-12 bg-white">
+<section class="max-w-7xl mx-auto px-4 py-12 bg-white">
   <h1 class="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 lg:mb-10">Cape and Karoo Birding Tour</h1>
   <p class="text-black text-md sm:text-base md:text-lg lg:text-lg text-center mb-6">This private 8-day birding itinerary (for 2–6 guests) highlights the <a href="south-africa/western-cape-birding.html" class="underline decoration-slate-600 hover:decoration-2 underline-offset-2">
     Western Cape’s rich birdlife</a>, focusing on South African endemics and diverse habitats. Starting and ending in Cape Town, it features fynbos-clad mountain slopes, coastal wetlands, the West Coast strandveld, and the arid Tanqua Karoo. Each day’s plan is detailed below, including key bird species, habitats, driving distances, accommodations, and seasonal tips for spring to early summer (September–November).</p>
@@ -194,26 +194,37 @@
   </a>
 </div>
 
- <!-- Tour Layout with Sticky Sidebar -->
-<section class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
-  <!-- Sidebar -->
-<aside class="md:w-1/3">
-  <div class="bg-zinc-100 p-6 rounded-lg shadow-md sticky top-5 z-10">
-    <h2 class="text-2xl md:text-3xl font-bold mb-4">Cape &amp; Karoo Birding Tour</h2>
-    <p class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg mb-6">
+<!-- Relaxed, Grid-based Card -->
+<div class="max-w-7xl mx-auto bg-white p-8 rounded-lg space-y-8">
+  
+  <!-- Header (spans full width) -->
+  <div class="space-y-4">
+    <h2 class="text-3xl font-bold text-center">Tour Details</h2>
+    <p class="font-sans text-lg text-black text-center">
       Explore the unique birdlife of South Africa’s Cape and Karoo regions on this immersive 8-day tour.
     </p>
-    <h2 class="text-xl font-semibold mb-4">Tour Details</h2>
-    <ul class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg mb-6 space-y-2">
-      <li><strong>Price:</strong> $4,100 per person</li>
-      <li><strong>Duration:</strong> 8 days</li>
-      <li><strong>Start/End:</strong> Cape Town</li>
-      <li><strong>Availability:</strong> Year-round</li>
-    </ul>
-    <div class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg space-y-4 mb-6">
-      <div>
-        <h3 class="font-semibold">Included</h3>
-        <ul class="list-disc list-inside space-y-1">
+  </div>
+  
+  <!-- Main Content Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+    
+    <!-- Tour Details Box -->
+    <div class="bg-white p-6 rounded-lg">
+      <h4 class="font-semibold mb-4">Price & Availability</h4>
+      <ul class="space-y-2 text-zinc-700">
+        <li><strong>Price:</strong> $4,100 per person</li>
+        <li><strong>Duration:</strong> 8 days</li>
+        <li><strong>Start/End:</strong> Cape Town</li>
+        <li><strong>Availability:</strong> Year-round</li>
+      </ul>
+    </div>
+    
+    <!-- Included / Excluded Lists -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+      <!-- Included -->
+      <div class="bg-white p-6 rounded-lg">
+        <h4 class="font-semibold mb-3">Included</h4>
+        <ul class="list-disc list-inside space-y-1 text-zinc-700">
           <li>Accommodation (7 nights)</li>
           <li>Meals: breakfasts, dinners & packed lunches</li>
           <li>All park &amp; reserve fees</li>
@@ -221,24 +232,41 @@
           <li>Expert guiding services</li>
         </ul>
       </div>
-      <div>
-        <h3 class="font-semibold">Excluded</h3>
-        <ul class="font-sans list-disc list-inside space-y-1">
+      <!-- Excluded -->
+      <div class="bg-white p-6 rounded-lg">
+        <h4 class="font-semibold mb-3">Excluded</h4>
+        <ul class="list-disc list-inside space-y-1 text-zinc-700">
           <li>International flights</li>
           <li>Travel insurance</li>
           <li>Personal expenses & gratuities</li>
         </ul>
       </div>
     </div>
+    
+  </div>
+  
+</div>
 
-    <!-- Book Now Button -->
-    <a
-      href="contact.html"
-      class="block text-center bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-lg border border-black hover:bg-black hover:text-white transition duration-300 text-md sm:text-base md:text-lg lg:text-lg"
-    >
-      BOOK THIS TOUR
-    </a>
 
+
+ <!-- Tour Layout with Sticky Sidebar -->
+<section class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+  <!-- Sidebar Index -->
+<aside class="md:w-1/3">
+  <div class="bg-zinc-100 p-6 rounded-lg shadow-md sticky top-5 z-10">
+    <h2 class="text-2xl font-bold mb-4">Tour Itinerary</h2>
+    <nav>
+      <ul class="space-y-2 font-sans text-md sm:text-base md:text-lg">
+        <li><a href="#day-1" class="hover:underline">Day 1: Arrival</a></li>
+        <li><a href="#day-2" class="hover:underline">Day 2: False Bay</a></li>
+        <li><a href="#day-3" class="hover:underline">Day 3: West Coast National Park</a></li>
+        <li><a href="#day-4" class="hover:underline">Day 4: West Coast to Ceres</a></li>
+        <li><a href="#day-5" class="hover:underline">Day 5: Tankwa Karoo</a></li>
+        <li><a href="#day-6" class="hover:underline">Day 6: Tankwa Exploration</a></li>
+        <li><a href="#day-7" class="hover:underline">Day 7: Tankwa to Cape Town</a></li>
+        <li><a href="#day-8" class="hover:underline">Day 8: Departure</a></li>
+      </ul>
+    </nav>
   </div>
 </aside>
 
@@ -247,7 +275,7 @@
   <main id="itinerary" class="md:w-2/3 space-y-8">
 
     <!-- Day 1 -->
-<section class="bg-zinc-100 p-6 rounded-md shadow-md">
+<section class="bg-zinc-100 p-6 rounded-md shadow-md" id="day-1">
   <h3 class="text-xl font-semibold mb-2">Day 1: Cape Town – Kirstenbosch &amp; Wetlands (Fynbos and Forest)</h3>
   <p class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">We kick off in Cape Town with a gentle introduction to Cape fynbos birds at the world-renowned Kirstenbosch National Botanical Gardens on the slopes of Table Mountain. The gardens showcase native fynbos habitat and Afromontane forest patches, offering our first endemics. <strong>Cape Sugarbirds</strong> and <strong>Orange-breasted Sunbirds</strong> flit around flowering proteas (iconic Western Cape endemics). We’ll also look for <em>Cape Spurfowl</em>, <em>Southern Double-collared Sunbird</em>, <em>Cape Batis</em>, <em>Forest Canary</em>, <em>Sombre Greenbul</em>, and the shy <em>Lemon Dove</em>. Kirstenbosch’s backdrop of mountain forest might yield <em>African Olive Pigeon</em>, <em>Olive Thrush</em>, or a <em>Spotted Eagle-Owl</em> roosting in a tree.</p>
   <p class="text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">If time permits in the afternoon, we visit the nearby Strandfontein Bird Sanctuary on the Cape Flats. This coastal wetland is a hotspot for waterbirds. We could see an array of ducks and geese – <strong>Cape Teal</strong>, <strong>Cape Shoveler</strong>, <strong>Southern Pochard</strong>, <strong>Yellow-billed Duck</strong> – as well as <strong>Greater Flamingo</strong>, <strong>Great White Pelican</strong>, and elegant <strong>Great Crested Grebes</strong>. Reedbeds might hide <em>Little Bittern</em> or warblers like <em>Lesser Swamp Warbler</em>, while overhead an <em>African Marsh Harrier</em> quarters the reeds. In spring, migrant shorebirds may also be present on the pans.</p>
@@ -255,7 +283,7 @@
 </section>
 
     <!-- Day 2 -->
-<section class="bg-zinc-100 p-6 rounded-md">
+<section class="bg-zinc-100 p-6 rounded-md" id="day-2">
   <h3 class="text-2xl font-semibold mb-2">Day 2: False Bay – Rooi Els &amp; Betty’s Bay (Coastal Fynbos &amp; Penguins)</h3>
   <p class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">Today we head out early along the scenic False Bay coast towards Rooi Els (about 1–1.5 hours’ drive from Cape Town). The road (Clarence Drive) hugs the coastline between towering mountains and the sea, offering spectacular views—and even Southern Right Whales offshore in spring. At Rooi Els, we bird rocky fynbos slopes in search of the iconic <strong>Cape Rockjumper</strong>. While scanning boulder-strewn hillsides, we may also find <em>Ground Woodpecker</em>, <em>Cape Rock Thrush</em>, and hear the call of the skulking <em>Victorin’s Warbler</em>. Other fynbos birds include <em>Cape Siskin</em>, <em>Cape Grassbird</em>, <em>Neddicky</em>, and more <em>Cape Sugarbirds</em> and sunbirds. Keep an eye skyward for <em>Verreaux’s Eagles</em> nesting on cliff faces.</p>
   <p class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">After success at Rooi Els, we continue a short drive to Betty’s Bay. In Harold Porter Botanical Gardens, look for <strong>Swee Waxbill</strong>, <strong>Brimstone Canary</strong>, <strong>African Paradise Flycatcher</strong>, and <strong>Black Saw-wing</strong>. After lunch, we visit the Stony Point penguin colony for up-close views of the endemic <strong>African Penguin</strong> alongside <em>Bank</em>, <em>Cape</em>, <em>Crowned</em>, and <em>White‑breasted Cormorants</em>. Hartlaub’s and Kelp Gulls wheel overhead, and Cape Fur Seals lounge on the rocks.</p>
@@ -263,7 +291,7 @@
 </section>
 
     <!-- Day 3 -->
-<section class="bg-zinc-100 p-6 rounded-lg shadow-md">
+<section class="bg-zinc-100 p-6 rounded-lg shadow-md" id="day-3">
   <h3 class="text-2xl font-semibold mb-2">Day 3: West Coast National Park (Coastal Strandveld &amp; Lagoon)</h3>
   <p class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">Leaving the city behind, we depart Cape Town heading north ~120 km (1.5 hr) to West Coast National Park. The habitat shifts to strandveld—a coastal Mediterranean-type shrubland on limestone/sand—hosting a different bird community. En route we pass farmlands where <strong>Blue Crane</strong> forage, as well as <em>Cape Longclaw</em>, <em>Pied Starling</em>, and <em>Capped Wheatear</em>. Springtime larks include <em>Cape Clapper Lark</em> and <em>Large-billed Lark</em>, with flocks of <em>White-throated Swallow</em> and <em>Cloud Cisticola</em> overhead.</p>
   <p class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">In the park's strandveld scrub, we target <strong>Southern Black Korhaan</strong> (listen for its barking call) and scan for the endemic <strong>Black Harrier</strong> quartering low over shrubs. Other land birds include <em>Grey-winged Francolin</em>, <em>Cape Spurfowl</em>, <em>Bokmakierie</em>, <em>Cape Penduline Tit</em>, <em>Southern Grey Tit</em>, and <em>Karoo Scrub Robin</em>. Seedeaters such as <em>Yellow Canary</em> and <em>White-throated Canary</em>, plus <em>White-backed Mousebird</em>, add variety. Wildflowers may carpet the landscape in spring.</p>
@@ -272,7 +300,7 @@
 </section>
 
     <!-- Day 4 -->
-<section class="bg-zinc-100 p-6 rounded-lg shadow-md">
+<section class="bg-zinc-100 p-6 rounded-lg shadow-md" id="day-4">
   <h3 class="text-2xl font-semibold mb-2">Day 4: West Coast to Ceres – Farmland Birding &amp; Mountain Fynbos</h3>
   <p class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">We have a final early outing in the West Coast area just outside the park. Dawn on farm roads near Langebaan offers localized specials like the iconic <strong>Cape Long-billed Lark</strong> and the scarce <strong>Sickle-winged Chat</strong>. Widespread arid-zone species may include <em>Ant-eating Chat</em>, flocks of <em>Grey-backed Sparrow-Lark</em>, and <em>Namaqua Sandgrouse</em> in flight. Farm dams often attract <strong>South African Shelduck</strong>, and more <strong>Blue Crane</strong> may appear in the golden light.</p>
   <p class="font-sans text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">By mid-morning we bid farewell to the coast and drive ~170 km (2.5 hr) through scenic mountain passes to the Ceres fruit-farming valley. After lunch, we explore upland fynbos near Karoopoort for the elusive <strong>Protea Canary</strong>. We may also encounter <em>Victorin’s Warbler</em> in thick shrubbery and <em>Cape Siskin</em> on rocky outcrops.</p>
@@ -281,7 +309,7 @@
 </section>
 
     <!-- Day 5 -->
-<section class="bg-zinc-100 p-6 rounded-lg shadow-md">
+<section class="bg-zinc-100 p-6 rounded-lg shadow-md" id="day-5">
   <h3 class="text-2xl font-semibold mb-2">Day 5: Tanqua Karoo – Exploring the Arid Plains</h3>
   <p class="text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">Tanqua Karoo is an endemic-rich birding paradise, and we devote a full day to unlocking its secrets. We start at dawn when the desert is alive with bird song. Many species have “Karoo” in their name—a testament to how special this region is. We’ll spend today driving slowly along gravel roads and walking in promising areas to find a variety of Karoo endemics and near-endemics:</p>
   <h4 class="text-lg font-semibold mb-2">Rocky Foothills &amp; Dry Gorges</h4>
@@ -297,7 +325,7 @@
 
    
 <!-- Day 6 -->
-<section class="bg-zinc-100 p-6 rounded-lg shadow-md">
+<section class="bg-zinc-100 p-6 rounded-lg shadow-md" id="day-6">
   <h3 class="text-2xl font-semibold mb-2">Day 6: Tanqua Karoo – Deeper Exploration of the Karoo Wilderness</h3>
   <p class="text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">We spend a second full day in the Tanqua Karoo, allowing us to cover different habitats, search for species missed yesterday, and enjoy the rhythm of desert birding without the pressure of travel. With this extra day, we can focus on slow, immersive exploration of the more remote or rocky areas of the region.</p>
   <p class="text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">We begin with another early morning start, focusing on rocky outcrops, deep kloofs (gorges), and acacia-lined dry riverbeds for elusive species. Prime targets include <strong>Cinnamon-breasted Warbler</strong>, <strong>Layard’s Warbler</strong>, <strong>Fairy Flycatcher</strong>, and scans for <em>Verreaux’s Eagle</em>, <em>Booted Eagle</em>, and <em>Rock Kestrel</em>.</p>
@@ -308,7 +336,7 @@
 </section>
 
     <!-- Day 7 -->
-<section class="bg-zinc-100 p-6 rounded-md">
+<section class="bg-zinc-100 p-6 rounded-md" id="day-7">
   <h3 class="text-2xl font-semibold mb-2">Day 7: Tanqua Karoo to Cape Town – Return via Mountain Pass</h3>
   <p class="text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">This morning we have a final pre-breakfast birding session in the Karoo to mop up any species we might have missed or to get better looks at favorites. The soft morning light is ideal for photography and observing bird behavior—displaying larks or sandgrouse flighting to drink.</p>
   <p class="text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">Afterwards, we depart the Tanqua Karoo and drive back to Cape Town (~3.5–4.5 hr, ~250 km) via a mountain fynbos route. We’ll stop at a mountain pass (e.g., Bain’s Kloof Pass or Gydo/Skitterykloof Pass) to seek the near-endemic <strong>Protea Canary</strong>. In the same fynbos patches look for <em>Victorin’s Warbler</em>, <em>Orange-breasted Sunbird</em>, and <em>Malachite Sunbird</em>, and scan rocky outcrops for <em>Cape Siskin</em> or soaring <em>Verreaux’s Eagle</em>.</p>
@@ -317,7 +345,7 @@
 </section>
 
     <!-- Day 8 -->
-<section class="bg-zinc-100 p-6 rounded-lg shadow-md">
+<section class="bg-zinc-100 p-6 rounded-lg shadow-md" id="day-8">
   <h3 class="text-2xl font-semibold mb-2">Day 8: Departure from Cape Town</h3>
   <p class="text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">After breakfast, it’s time to wrap up the tour. Those with later flights can optionally do a short morning outing to a nearby site (the eastern slopes of Table Mountain or a coastal wetland) for any last-minute birding—perhaps adding a few final species. Otherwise, we transfer to Cape Town International Airport, where the guide will bid the group farewell.</p>
   <p class="text-black text-md sm:text-base md:text-lg lg:text-lg mb-4">The 8-day adventure concludes with countless bird sightings, stunning landscapes, and a deeper understanding of South Africa’s Western Cape ecosystems. Safe travels!</p>
