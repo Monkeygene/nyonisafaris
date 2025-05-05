@@ -341,49 +341,130 @@
   <section class="py-4 lg:py-24">
     <div class="container mx-auto max-w-5xl px-4">
       <div class="flex flex-col-reverse md:flex-row items-stretch bg-white rounded-md shadow-md overflow-hidden">
-        <!-- Subscribe Form (Bottom on small devices, left on md+) -->
+        <!-- Subscribe Form -->
         <div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
           <h2 class="text-3xl font-bold mb-4">Join the Flock</h2>
-          <p class="text-gray-700 mb-6">Subscribe to my newsletter and watch my videos earlier, get exclusive offers and read my latest news. And don't worry I won't be filling up your mailbox with spam.</p>
-          <form action="mailto:eugene@nyonisafaris.com" method="POST" enctype="text/plain" class="flex flex-col">
-            <input 
-              type="text" 
-              name="name" 
-              placeholder="Name" 
-              class="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+          <p class="text-gray-700 mb-6">
+            Subscribe to my newsletter and watch my videos earlier, get exclusive offers and read my latest news. And do not worry, I won't fill up your mailbox with spam.
+          </p>
+  
+          <!-- Mailchimp embedded form -->
+          <form
+            action="https://nyonisafaris.us16.list-manage.com/subscribe/post?u=65b6b0cc54bd0862e75865825&amp;id=a04af09294&amp;f_id=0029a5e1f0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="flex flex-col space-y-4"
+            target="_blank"
+            novalidate
+          >
+            <!-- Email Address -->
+            <div class="flex flex-col">
+              <label for="mce-EMAIL" class="text-sm font-medium mb-1">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                name="EMAIL"
+                class="required email w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+                id="mce-EMAIL"
+                placeholder="you@example.com"
+                required
+              >
+            </div>
+  
+            <!-- First Name -->
+            <div class="flex flex-col">
+              <label for="mce-FNAME" class="text-sm font-medium mb-1">
+                First Name
+              </label>
+              <input
+                type="text"
+                name="FNAME"
+                class="text w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+                id="mce-FNAME"
+                placeholder="Your name"
+              >
+            </div>
+  
+            <!-- Responses -->
+            <div id="mce-responses" class="text-sm text-gray-700">
+              <div class="response text-red-600" id="mce-error-response" style="display:none;"></div>
+              <div class="response text-green-600" id="mce-success-response" style="display:none;"></div>
+            </div>
+  
+            <!-- Honeypot (hide off-screen) -->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input
+                type="text"
+                name="b_65b6b0cc54bd0862e75865825_a04af09294"
+                tabindex="-1"
+                value=""
+              >
+            </div>
+  
+            <!-- Submit -->
+            <button
+              type="submit"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              class="inline-block bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-lg border border-black hover:bg-black hover:text-white transition duration-300 text-md sm:text-base md:text-lg lg:text-lg"
             >
-            <input 
-              type="email" 
-              name="email" 
-              placeholder="Email Address" 
-              class="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
-            >
-            <button type="submit" class="inline-block bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-lg border border-black hover:bg-black hover:text-white transition duration-300 text-md sm:text-base md:text-lg lg:text-lg">
               Subscribe
             </button>
           </form>
+          <!-- End Mailchimp form -->
         </div>
-        <!-- Image (Top on small devices, right on md+) -->
+  
+        <!-- Image -->
         <div class="w-full md:w-1/2">
-          <img 
-            src="assets/images/malawi/nyika-national-park/red-necked-spurfowl-nyika-national-park.jpg" 
-            alt="Red-Necked Spurfowl in Nyika National Park on a Africa Birding Safari" 
+          <img
+            src="assets/images/malawi/nyika-national-park/red-necked-spurfowl-nyika-national-park.jpg"
+            alt="Red-Necked Spurfowl in Nyika National Park on an Africa Birding Safari"
             class="w-full h-full object-cover"
           >
         </div>
       </div>
     </div>
+  
+    <!-- Mailchimp validation script -->
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+        fnames[6] = 'COMPANY';
+        ftypes[6] = 'text';
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
   </section>
+  
   
   <!-- What is a typical Africa Birding Tour like -->
   <section class="py-4 lg:py-12 mt-6">
     <div class="container mx-auto px-4 py-4 flex flex-col items-center justify-center">
       <div class="max-w-4xl">
         <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-center mb-4">
-          What a typical Africa Birding Tour is like
+          What a typical Birdwatching Tour Africa is like
         </h2>
         <p class="text-md sm:text-base md:text-lg lg:text-lg text-gray-700 text-center">
-          A typical Africa birding tour is meticulously designed to prioritize the discovery of key bird species, especially endemics and regional specialties. While achieving comprehensive bird lists is a significant goal, we recognize that the intensity of birding activities can be demanding. Therefore, our itineraries are thoughtfully structured to include additional days, allowing participants to fully savor each bird sighting without feeling rushed. This approach not only facilitates ample time to locate and appreciate target species but also ensures opportunities to observe and enjoy other wildlife encounters along the way. By adopting a more relaxed pace, we aim to provide an enriching and enjoyable birding experience that balances thorough species documentation with the sheer pleasure of wildlife observation.
+          A typical Africa birdwatching tour is meticulously designed to prioritize the discovery of key bird species, especially endemics and regional specialties. While achieving comprehensive bird lists is a significant goal, we recognize that the intensity of birding activities can be demanding. Therefore, our itineraries are thoughtfully structured to include additional days, allowing participants to fully savor each bird sighting without feeling rushed. This approach not only facilitates ample time to locate and appreciate target species but also ensures opportunities to observe and enjoy other wildlife encounters along the way. By adopting a more relaxed pace, we aim to provide an enriching and enjoyable birding experience that balances thorough species documentation with the sheer pleasure of wildlife observation.
         </p>
       </div>
     </div>
