@@ -44,44 +44,26 @@
   <!-- MY CSS -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      "name": "Nyoni Safaris",
-      "url": "https://nyonisafaris.com/birding/",
-      "logo": "https://nyonisafaris.com/assets/images/nyonisafaris-favicon.webp",
-      "image": "https://nyonisafaris.com/assets/og-image.jpg",
-      "description": "Read our blog for expert insights on Africa’s premier birding tours, birding tips, and news on rare bird species with Nyoni Safaris.",
-      "telephone": "+1234567890",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Your Street Address",
-        "addressLocality": "Your City",
-        "addressRegion": "Your State/Region",
-        "postalCode": "Your Postal Code",
-        "addressCountry": "Your Country"
+  <!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"Home",
+        "item":"https://www.nyonisafaris.com/"
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://www.facebook.com/nyonisafaris",
-        "https://twitter.com/nyonisafaris",
-        "https://www.instagram.com/nyonisafaris"
-      ],
-      "priceRange": "$$"
-    }
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Birding Journals",
+        "item":"https://www.nyonisafaris.com/birding/"
+      }
+    ]
+  }
   </script>
 
   <!-- Google Tag (gtag.js) -->
