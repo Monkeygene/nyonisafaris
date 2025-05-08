@@ -97,37 +97,43 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nyonisafaris.com/malawi/birding.html</loc>
+    <loc>https://nyonisafaris.com/birding/malawi/birds-of-malawi/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nyonisafaris.com/malawi/lake-malawi-birding.html</loc>
+    <loc>https://nyonisafaris.com/birding/malawi/dzalanyama/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nyonisafaris.com/malawi/liwonde-national-park-birding.html</loc>
+    <loc>https://nyonisafaris.com/birding/malawi/lake-malawi/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nyonisafaris.com/malawi/dzalanyama-forest-birding.html</loc>
+    <loc>https://nyonisafaris.com/birding/malawi/lilongwe/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nyonisafaris.com/malawi/nyika-national-park-birding.html</loc>
+    <loc>https://nyonisafaris.com/birding/malawi/liwonde/</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://nyonisafaris.com/birding/malawi/nyika-plateau/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nyonisafaris.com/south-africa/birding.html</loc>
+    <loc>https://nyonisafaris.com/birding/south-africa/birds-of-south-africa/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -223,25 +229,31 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nyonisafaris.com/zambia/birding.html</loc>
+    <loc>https://nyonisafaris.com/birding/zambia/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
     <url>
-    <loc>https://nyonisafaris.com/zambia/kafue-national-park-birding.html</loc>
+    <loc>https://nyonisafaris.com/birding/zambia/birds-of-zambia/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
     <url>
-    <loc>https://nyonisafaris.com/zambia/south-luangwa-national-park-birding.html</loc>
+    <loc>https://nyonisafaris.com/birding/zambia/kafue/</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+     <url>
+    <loc>https://nyonisafaris.com/birding/zambia/south-luangwa/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nyonisafaris.com/general/beginner-bird-photography.html</loc>
+    <loc>https://nyonisafaris.com/birding/tips/bird-photography-for-beginners/</loc>
     <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
