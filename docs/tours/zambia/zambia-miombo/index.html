@@ -41,44 +41,38 @@
   <!-- MY CSS -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      "name": "Nyoni Safaris",
-      "url": "https://nyonisafaris.com/tours/zambia/zambia-miombo/",
-      "logo": "https://nyonisafaris.com/assets/images/nyonisafaris-favicon.webp",
-      "image": "https://nyonisafaris.com/assets/og-image.jpg",
-      "description": "Explore Africa's top birding safari tours with Nyoni Safaris. Discover rare and beautiful wildlife experiences in Africa.",
-      "telephone": "+1234567890",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Your Street Address",
-        "addressLocality": "Your City",
-        "addressRegion": "Your State/Region",
-        "postalCode": "Your Postal Code",
-        "addressCountry": "Your Country"
+<!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"Home",
+        "item":"https://www.nyonisafaris.com/"
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Africa Birding Tours",
+        "item":"https://www.nyonisafaris.com/tours/"
       },
-      "sameAs": [
-        "https://www.facebook.com/nyonisafaris",
-        "https://twitter.com/nyonisafaris",
-        "https://www.instagram.com/nyonisafaris"
-      ],
-      "priceRange": "$$"
-    }
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"Zambia Birding Tours",
+        "item":"https://www.nyonisafaris.com/tours/zambia/"
+      },
+      {
+        "@type":"ListItem",
+        "position":4,
+        "name":"Zambia and Miombo Birding Tour",
+        "item":"https://www.nyonisafaris.com/tour/zambia/zambia-miombo/"
+      }
+    ]
+  }
   </script>
 
   <!-- Google tag (gtag.js) -->
@@ -161,6 +155,36 @@
     </nav>
     <!-- End of Nav -->
 
+     <!-- Breadcrumb Malawi Journals -->
+    <section class="max-w-7xl mx-auto px-4">
+    <nav class="w-full flex justify-center text-sm text-gray-700 mb-4" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1">
+        <!-- 1. Home -->
+        <li>
+          <a href="/" class="hover:underline">Home</a>
+        </li>
+    
+        <!-- 2. Journals now links to Malawi -->
+        <li>
+          <span class="mx-2">/</span>
+          <a href="/tours/" class="hover:underline">Tours</a>
+        </li>
+
+          <!-- 3. Journals now links to Malawi -->
+        <li>
+          <span class="mx-2">/</span>
+          <a href="/tours/zambia/" class="hover:underline">Zambia</a>
+        </li>
+    
+        <!-- 4. Current page -->
+        <li>
+          <span class="mx-2">/</span>
+          <span class="font-medium text-gray-500">Zambia and Miombo</span>
+        </li>
+      </ol>
+    </nav>
+  </section>
+
   <!-- Image Box -->
   <section class="max-w-7xl mx-auto px-4">
     <div class="w-full overflow-hidden">
@@ -175,23 +199,6 @@
     Western Cape's rich birdlife</a>, focusing on South African endemics and diverse habitats. Starting and ending in Cape Town, it features fynbos-clad mountain slopes, coastal wetlands, the West Coast strandveld, and the arid Tankwa Karoo. Each day's plan is detailed below, including key bird species, habitats, driving distances, accommodations, and seasonal tips for spring to early summer (September-November).</p>
 </section>
 
-  <!-- Centered Go Back Links -->
-<div class="flex justify-center items-center mt-6 space-x-4">
-  <span class="font-medium">Go back:</span>
-  <a
-    href="birding-tours-zambia.html"
-    class="text-black text-md sm:text-base md:text-lg lg:text-lg underline decoration-slate-700 hover:decoration-2 underline-offset-2"
-  >
-    Zambia Birding Tours
-  </a>
-  <p>|</p>
-  <a
-    href="tours.html"
-    class="text-black text-md sm:text-base md:text-lg lg:text-lg underline decoration-slate-700 hover:decoration-2 underline-offset-2"
-  >
-    All Tours
-  </a>
-</div>
 
 <!-- Tour Details Section (just above itinerary) -->
 <section class="max-w-7xl mx-auto bg-white p-8 rounded-2xl space-y-8 mt-8 mb-8">

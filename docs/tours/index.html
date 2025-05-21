@@ -44,44 +44,26 @@
   <!-- MY CSS -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      "name": "Nyoni Safaris",
-      "url": "https://nyonisafaris.com/tours/",
-      "logo": "https://nyonisafaris.com/assets/images/nyonisafaris-favicon.webp",
-      "image": "https://nyonisafaris.com/assets/og-image.jpg",
-      "description": "Explore our expert-led birding tours across Africa's top destinations with Nyoni Safaris. Discover rare and beautiful bird species on our unforgettable tours.",
-      "telephone": "+1234567890",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Your Street Address",
-        "addressLocality": "Your City",
-        "addressRegion": "Your State/Region",
-        "postalCode": "Your Postal Code",
-        "addressCountry": "Your Country"
+  <!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"Home",
+        "item":"https://www.nyonisafaris.com/"
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "sameAs": [
-        "https://www.facebook.com/nyonisafaris",
-        "https://twitter.com/nyonisafaris",
-        "https://www.instagram.com/nyonisafaris"
-      ],
-      "priceRange": "$$"
-    }
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Africa Birding Tours",
+        "item":"https://www.nyonisafaris.com/tours/"
+      }
+    ]
+  }
   </script>
 
   <!-- Google Tag (gtag.js) -->
@@ -162,6 +144,22 @@
     </div>
     </nav>
     <!-- End of Nav -->
+
+     <section class="max-w-7xl mx-auto px-4">
+    <nav class="w-full flex justify-center text-sm text-gray-700 mb-4" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1">
+        <!-- 1. Home -->
+        <li class="inline-flex items-center">
+          <a href="/" class="hover:underline">Home</a>
+        </li>
+        <!-- Separator + Journals -->
+        <li class="inline-flex items-center">
+          <span class="mx-2">/</span>
+          <span class="font-medium text-gray-500">Tours</span>
+        </li>
+      </ol>
+    </nav>
+    </section>
 
   <!-- Image Box -->
    <section class="max-w-7xl mx-auto px-4">
