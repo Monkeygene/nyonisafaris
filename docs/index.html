@@ -43,45 +43,21 @@
     <link rel="stylesheet" href="assets/css/build/tailwind.css">
     <link rel="stylesheet" href="style.css">
 
-   <!-- Schema Markup -->
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Nyoni Safaris",
-    "url": "https://nyonisafaris.com/",
-    "logo": "https://nyonisafaris.com/assets/images/logo/nyonibirdingsafarislogowhite.png",
-    "image": "https://nyonisafaris.com/assets/og-image.jpg",
-    "description": "Africa Birding Tours with Nyoni Safaris - Explore top birding hotspots, spot rare species on expert led adventures. Book your birding trip today!",
-    "telephone": "+351964872495",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "15 Ernst Street",
-      "addressLocality": "Tzaneen",
-      "addressRegion": "Limpopo",
-      "postalCode": "0850",
-      "addressCountry": "South Africa"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "16:30"
-    },
-    "sameAs": [
-      "https://facebook.com/nyonisafaris",
-      "https://www.youtube.com/@nyonisafaris",
-      "https://instagram.com/nyonisafaris"
-    ],
-    "priceRange": "$$"
-  }
-  </script>  
+  <!-- JSON-LD BreadcrumbList for Home page -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://eugenesafaris.com/"
+    }
+  ]
+}
+    </script>
 
   <!-- Google Tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPB3XG9XTD"></script>
@@ -159,6 +135,18 @@
     </div>
     </nav>
     <!-- End of Nav -->
+
+    <!-- Visually hidden breadcrumb for Home page -->
+<div class="max-w-7xl mx-auto">
+  <nav class="sr-only" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1">
+      <li class="inline-flex items-center">
+        <span class="font-medium text-gray-500">Home</span>
+      </li>
+    </ol>
+  </nav>
+</div>
+  <!-- End of Breadcrumb -->
     
         <!-- Hero Image Container -->
     <section class="max-w-7xl mx-auto px:-4 lg:px-0">
