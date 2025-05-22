@@ -41,136 +41,39 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css">
   
-  <!-- Schema -->
-  <script type="application/ld+json">
+   <!-- JSON-LD BreadcrumbList for Home page -->
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://nyonisafaris.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Tours",
-          "item": "https://nyonisafaris.com/tours/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "South Africa",
-          "item": "https://nyonisafaris.com/tours/south-africa/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Cape to Kruger",
-          "item": "https://nyonisafaris.com/tours/south-africa/cape-kruger/"
-        }
-      ]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://eugenesafaris.com/"
     },
     {
-      "@type": "TouristTrip",
-      "name": "Cape & Karoo Birding Tour",
-      "description": "A multi-day guided birding tour through South Africa's Cape fynbos and Karoo habitats, targeting true endemics, near-endemics, coastal and arid-zone specialties.",
-      "image": [
-        "https://nyonisafaris.com/assets/images/cape-karoo-1.jpg",
-        "https://nyonisafaris.com/assets/images/cape-karoo-2.jpg"
-      ],
-      "url": "https://nyonisafaris.com/tours/south-africa/cape-karoo/",
-      "touristType": ["Birdwatchers","Nature Enthusiasts"],
-      "itinerary": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "TouristAttraction",
-            "name": "Kirstenbosch National Botanical Gardens"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "TouristAttraction",
-            "name": "Strandfontein Bird Sanctuary"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "TouristAttraction",
-            "name": "Rooi Els Coastal Route"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "TouristAttraction",
-            "name": "West Coast National Park"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "TouristAttraction",
-            "name": "Tanqua Karoo Exploration"
-          }
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "price": "3478",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://nyonisafaris.com/tours/south-africa/cape-karoo/book"
-      },
-      "provider": {
-        "@type": "TravelAgency",
-        "name": "Nyoni Safaris",
-        "url": "https://nyonisafaris.com",
-        "logo": "https://nyonisafaris.com/assets/images/nyonisafaris-favicon.webp",
-        "telephone": "+1234567890",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Your Street Address",
-          "addressLocality": "Your City",
-          "addressRegion": "Your State/Region",
-          "postalCode": "Your Postal Code",
-          "addressCountry": "Your Country"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
-          "opens": "09:00",
-          "closes": "18:00"
-        },
-        "sameAs": [
-          "https://www.facebook.com/nyonisafaris",
-          "https://twitter.com/nyonisafaris",
-          "https://www.instagram.com/nyonisafaris"
-        ],
-        "priceRange": "$$"
-      }
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Africa Birding Tours",
+      "item": "https://eugenesafaris.com/tours/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "South Africa Birding Tours",
+      "item": "https://eugenesafaris.com/tours/south-africa/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Cape to Kruger Birding Tour",
+      "item": "https://eugenesafaris.com/tours/south-africa/cape-kruger/"
     }
   ]
 }
-</script>
+    </script>
   
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPB3XG9XTD"></script>

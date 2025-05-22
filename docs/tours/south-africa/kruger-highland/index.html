@@ -41,45 +41,39 @@
   <!-- MY CSS -->
   <link rel="stylesheet" href="/assets/css/styles.css">
   
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "TravelAgency",
-        "name": "Nyoni Safaris",
-        "url": "https://nyonisafaris.com/tours/south-africa/kruger-highland/",
-        "logo": "https://nyonisafaris.com/assets/images/nyonisafaris-favicon.webp",
-        "image": "https://nyonisafaris.com/assets/og-image.jpg",
-        "description": "Kruger & Higland Birding Tour, explore the vast lowland, see the big 5 and bird in and around the world-renowned Kruger National Park.",
-        "telephone": "+1234567890",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Your Street Address",
-          "addressLocality": "Your City",
-          "addressRegion": "Your State/Region",
-          "postalCode": "Your Postal Code",
-          "addressCountry": "Your Country"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
-          "opens": "09:00",
-          "closes": "18:00"
-        },
-        "sameAs": [
-          "https://www.facebook.com/nyonisafaris",
-          "https://twitter.com/nyonisafaris",
-          "https://www.instagram.com/nyonisafaris"
-        ],
-        "priceRange": "$$"
-      }
-  </script>
+  <!-- JSON-LD BreadcrumbList for Home page -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://eugenesafaris.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Africa Birding Tours",
+      "item": "https://eugenesafaris.com/tours/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "South Africa Birding Tours",
+      "item": "https://eugenesafaris.com/tours/south-africa/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Kruger Park and Highland",
+      "item": "https://eugenesafaris.com/tours/south-africa/kruger-highland/"
+    }
+  ]
+}
+    </script>
   
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPB3XG9XTD"></script>

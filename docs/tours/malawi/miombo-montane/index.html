@@ -42,45 +42,39 @@
   <!-- MY CSS -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "TravelAgency",
-        "name": "Nyoni Safaris",
-        "url": "https://nyonisafaris.com/tours/malawi/miombo-montane/",
-        "logo": "https://nyonisafaris.com/assets/images/nyonisafaris-favicon.webp",
-        "image": "https://nyonisafaris.com/assets/og-image.jpg",
-        "description": "Malawi birding tour covering miombo, montane, and wetland ecosystems. See Malawi’s only endemic and 650+ bird species in Africa’s warm heart.",
-        "telephone": "+1234567890",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Your Street Address",
-          "addressLocality": "Your City",
-          "addressRegion": "Your State/Region",
-          "postalCode": "Your Postal Code",
-          "addressCountry": "Your Country"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
-          "opens": "09:00",
-          "closes": "18:00"
-        },
-        "sameAs": [
-          "https://www.facebook.com/nyonisafaris",
-          "https://twitter.com/nyonisafaris",
-          "https://www.instagram.com/nyonisafaris"
-        ],
-        "priceRange": "$$"
-      }
-  </script>
+   <!-- JSON-LD BreadcrumbList for Home page -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://eugenesafaris.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Africa Birding Tours",
+      "item": "https://eugenesafaris.com/tours/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Malawi Birding Tours",
+      "item": "https://eugenesafaris.com/tours/malawi/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Miombo & Montane Birding Tour",
+      "item": "https://eugenesafaris.com/tours/malawi/miombo-montane/"
+    }
+  ]
+}
+    </script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPB3XG9XTD"></script>
